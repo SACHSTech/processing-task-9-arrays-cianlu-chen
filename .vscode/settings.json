@@ -2,7 +2,8 @@
     "java.project.referencedLibraries": {
         "include": [
             "lib/**/*.jar",
-            "/Users/chenk5798/Desktop/JARs/**/*.jar"
+            "/Users/chenk5798/Desktop/JARs/**/*.jar",
+            "c:\\Users\\kalin\\Desktop\\JARs\\core.jar"
         ],
         "exclude": [
             "lib/repl_core.jar"

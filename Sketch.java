@@ -8,7 +8,11 @@ public class Sketch extends PApplet {
   PImage imgStandStill;
 
   float[] circleY = new float[75];
+
   int intSnowSpeed = 1;
+
+  int intManX = 375;
+  int intMaxY = 600;
 	
   public void settings() {
     size(750, 750);
@@ -35,9 +39,27 @@ public class Sketch extends PApplet {
   public void draw() {
     image(imgBackground, 0, 0);
     
-    image(imgWalkRight, 100, 600);
-    image(imgWalkLeft, 300, 600);
-    image(imgStandStill, 500, 600);
+    if(keyPressed){
+      if(key == 'a'){
+        image(imgWalkLeft, intManX, 600);
+
+        intManX -= 5;
+      }
+
+      else if(key == 'd'){
+        image(imgWalkRight, intManX, 600);
+
+        intManX += 5;
+      }
+
+      else{
+        image(imgStandStill, intManX, 600);
+      }
+    }
+
+    else{
+      image(imgStandStill, intManX, 600);
+    }
 
     for (int i = 0; i < circleY.length; i++) {
       float circleX = width * i / circleY.length;
