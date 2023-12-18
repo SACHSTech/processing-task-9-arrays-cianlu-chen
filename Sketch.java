@@ -116,7 +116,6 @@ public class Sketch extends PApplet {
       // Hiding the snowflakes
       if(blnSnowHide[i]){
         snowX[i] = -100;
-        blnSnowHide[i] = false;
       }
     }
 
