@@ -109,7 +109,7 @@ public class Sketch extends PApplet {
       if(snowX[i] > intManX && snowX[i] < intManX + 60){
         if(snowY[i] > 600 && snowY[i] < 650){
           intLives--;
-          snowY[i] = -0;
+          snowY[i] = 0;
         }
       }
 
